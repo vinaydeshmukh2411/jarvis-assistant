@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jarvis Web Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="topbar">
+        <div class="brand">
+          <span class="dot"></span>
+          <h1>JARVIS</h1>
+        </div>
+        <button id="micButton" class="mic-btn" title="Speak">🎙️</button>
+      </div>
+
+      <div id="chatBox" class="chat-box" aria-live="polite"></div>
+
+      <div class="input-row">
+        <input id="userInput" type="text" placeholder="Ask Jarvis..." />
+        <button id="sendButton">Send</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
